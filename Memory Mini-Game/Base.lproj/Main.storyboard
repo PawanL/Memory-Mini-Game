@@ -17,51 +17,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-Ff-fQn">
-                                <rect key="frame" x="285" y="285" width="30" height="30"/>
-                                <state key="normal" title="Play"/>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kye-ea-w7D">
-                                <rect key="frame" x="138" y="359" width="42" height="30"/>
-                                <state key="normal" title="Green"/>
-                                <connections>
-                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jr3-10-TOJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZs-xB-fWs">
-                                <rect key="frame" x="388" y="173" width="44" height="30"/>
-                                <state key="normal" title="Yellow"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZs-xB-fWs">
+                                <rect key="frame" x="302" y="132" width="167" height="165"/>
+                                <state key="normal" title="Yellow" image="yellow"/>
                                 <connections>
                                     <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pjb-I6-qOe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-Jy-bqB">
-                                <rect key="frame" x="117" y="173" width="30" height="30"/>
-                                <state key="normal" title="Red"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kye-ea-w7D">
+                                <rect key="frame" x="131" y="304" width="166" height="166"/>
+                                <state key="normal" title="Green" image="green"/>
                                 <connections>
-                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Seh-Dr-McF"/>
+                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jr3-10-TOJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjs-24-iRB">
-                                <rect key="frame" x="273" y="92" width="54" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bJ-zV-XzT">
-                                <rect key="frame" x="381" y="359" width="31" height="30"/>
-                                <state key="normal" title="Blue"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bJ-zV-XzT">
+                                <rect key="frame" x="302" y="304" width="167" height="166"/>
+                                <state key="normal" title="Blue" image="blue"/>
                                 <connections>
                                     <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76g-OS-VEH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-Ff-fQn">
+                                <rect key="frame" x="256" y="256" width="88" height="88"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="playGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfc-1G-Xez"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjs-24-iRB">
+                                <rect key="frame" x="257" y="62" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-Jy-bqB">
+                                <rect key="frame" x="131" y="132" width="166" height="165"/>
+                                <state key="normal" title="Red" image="red"/>
+                                <connections>
+                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Seh-Dr-McF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="top" secondItem="PZs-xB-fWs" secondAttribute="bottom" constant="-41" id="6hm-gh-F5C"/>
+                            <constraint firstItem="4bJ-zV-XzT" firstAttribute="leading" secondItem="3a0-Ff-fQn" secondAttribute="trailing" constant="-42" id="AfO-GG-ajk"/>
+                            <constraint firstItem="4bJ-zV-XzT" firstAttribute="top" secondItem="3a0-Ff-fQn" secondAttribute="bottom" constant="-40" id="BgV-vS-g4M"/>
+                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EKz-1M-041"/>
+                            <constraint firstItem="2sO-Jy-bqB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="132" id="EMu-me-1Rw"/>
+                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="leading" secondItem="2sO-Jy-bqB" secondAttribute="trailing" constant="-41" id="V3W-Mz-gqG"/>
+                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="leading" secondItem="Kye-ea-w7D" secondAttribute="trailing" constant="-41" id="fQl-nZ-BIr"/>
+                            <constraint firstItem="PZs-xB-fWs" firstAttribute="leading" secondItem="3a0-Ff-fQn" secondAttribute="trailing" constant="-42" id="hNl-Xp-gTf"/>
+                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m18-3z-8dO"/>
+                            <constraint firstItem="kjs-24-iRB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="mW8-mc-kAH"/>
+                            <constraint firstItem="Kye-ea-w7D" firstAttribute="top" secondItem="3a0-Ff-fQn" secondAttribute="bottom" constant="-40" id="o80-ei-Lnv"/>
+                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="top" secondItem="2sO-Jy-bqB" secondAttribute="bottom" constant="-41" id="q0b-dN-ze9"/>
+                            <constraint firstItem="kjs-24-iRB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qy8-yB-wLK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EMu-me-1Rw"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="scoreLabel" destination="kjs-24-iRB" id="DkB-n1-DA7"/>
                         <outlet property="startButton" destination="3a0-Ff-fQn" id="2YP-m5-cAd"/>
-                        <outletCollection property="soundButton" destination="PZs-xB-fWs" collectionClass="NSMutableArray" id="BJb-Ev-aSp"/>
+                        <outletCollection property="soundButton" destination="2sO-Jy-bqB" collectionClass="NSMutableArray" id="PFp-ol-8bQ"/>
+                        <outletCollection property="soundButton" destination="PZs-xB-fWs" collectionClass="NSMutableArray" id="E4S-eQ-2p4"/>
+                        <outletCollection property="soundButton" destination="4bJ-zV-XzT" collectionClass="NSMutableArray" id="jf8-7r-dzK"/>
+                        <outletCollection property="soundButton" destination="Kye-ea-w7D" collectionClass="NSMutableArray" id="Tzi-41-ip3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -69,4 +95,11 @@
             <point key="canvasLocation" x="305" y="365"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blue" width="166" height="166"/>
+        <image name="green" width="165" height="166"/>
+        <image name="play" width="88" height="88"/>
+        <image name="red" width="165" height="165"/>
+        <image name="yellow" width="166" height="165"/>
+    </resources>
 </document>
