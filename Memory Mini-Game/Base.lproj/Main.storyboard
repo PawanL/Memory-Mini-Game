@@ -17,23 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZs-xB-fWs">
-                                <rect key="frame" x="302" y="132" width="167" height="165"/>
-                                <state key="normal" title="Yellow" image="yellow"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-Jy-bqB">
+                                <rect key="frame" x="130" y="131" width="165" height="165"/>
+                                <state key="normal" image="red"/>
                                 <connections>
-                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pjb-I6-qOe"/>
+                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Seh-Dr-McF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kye-ea-w7D">
-                                <rect key="frame" x="131" y="304" width="166" height="166"/>
-                                <state key="normal" title="Green" image="green"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kye-ea-w7D">
+                                <rect key="frame" x="130" y="304" width="165" height="166"/>
+                                <state key="normal" image="green"/>
                                 <connections>
                                     <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jr3-10-TOJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bJ-zV-XzT">
-                                <rect key="frame" x="302" y="304" width="167" height="166"/>
-                                <state key="normal" title="Blue" image="blue"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bJ-zV-XzT">
+                                <rect key="frame" x="306" y="304" width="166" height="166"/>
+                                <state key="normal" image="blue"/>
                                 <connections>
                                     <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76g-OS-VEH"/>
                                 </connections>
@@ -51,28 +51,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-Jy-bqB">
-                                <rect key="frame" x="131" y="132" width="166" height="165"/>
-                                <state key="normal" title="Red" image="red"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZs-xB-fWs">
+                                <rect key="frame" x="306" y="131" width="166" height="165"/>
+                                <state key="normal" image="yellow"/>
                                 <connections>
-                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Seh-Dr-McF"/>
+                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pjb-I6-qOe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="top" secondItem="PZs-xB-fWs" secondAttribute="bottom" constant="-41" id="6hm-gh-F5C"/>
-                            <constraint firstItem="4bJ-zV-XzT" firstAttribute="leading" secondItem="3a0-Ff-fQn" secondAttribute="trailing" constant="-42" id="AfO-GG-ajk"/>
+                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="top" secondItem="PZs-xB-fWs" secondAttribute="bottom" constant="-40" id="6hm-gh-F5C"/>
+                            <constraint firstItem="4bJ-zV-XzT" firstAttribute="leading" secondItem="3a0-Ff-fQn" secondAttribute="trailing" constant="-38" id="AfO-GG-ajk"/>
                             <constraint firstItem="4bJ-zV-XzT" firstAttribute="top" secondItem="3a0-Ff-fQn" secondAttribute="bottom" constant="-40" id="BgV-vS-g4M"/>
                             <constraint firstItem="3a0-Ff-fQn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EKz-1M-041"/>
                             <constraint firstItem="2sO-Jy-bqB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="132" id="EMu-me-1Rw"/>
-                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="leading" secondItem="2sO-Jy-bqB" secondAttribute="trailing" constant="-41" id="V3W-Mz-gqG"/>
-                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="leading" secondItem="Kye-ea-w7D" secondAttribute="trailing" constant="-41" id="fQl-nZ-BIr"/>
-                            <constraint firstItem="PZs-xB-fWs" firstAttribute="leading" secondItem="3a0-Ff-fQn" secondAttribute="trailing" constant="-42" id="hNl-Xp-gTf"/>
+                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="leading" secondItem="2sO-Jy-bqB" secondAttribute="trailing" constant="-39" id="V3W-Mz-gqG"/>
+                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="leading" secondItem="Kye-ea-w7D" secondAttribute="trailing" constant="-39" id="fQl-nZ-BIr"/>
+                            <constraint firstItem="PZs-xB-fWs" firstAttribute="leading" secondItem="3a0-Ff-fQn" secondAttribute="trailing" constant="-38" id="hNl-Xp-gTf"/>
                             <constraint firstItem="3a0-Ff-fQn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m18-3z-8dO"/>
                             <constraint firstItem="kjs-24-iRB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="mW8-mc-kAH"/>
                             <constraint firstItem="Kye-ea-w7D" firstAttribute="top" secondItem="3a0-Ff-fQn" secondAttribute="bottom" constant="-40" id="o80-ei-Lnv"/>
-                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="top" secondItem="2sO-Jy-bqB" secondAttribute="bottom" constant="-41" id="q0b-dN-ze9"/>
+                            <constraint firstItem="3a0-Ff-fQn" firstAttribute="top" secondItem="2sO-Jy-bqB" secondAttribute="bottom" constant="-40" id="q0b-dN-ze9"/>
                             <constraint firstItem="kjs-24-iRB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qy8-yB-wLK"/>
                         </constraints>
                         <variation key="default">
