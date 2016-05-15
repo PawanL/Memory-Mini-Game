@@ -12,6 +12,10 @@
 		878CC5271CE902FE00127382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878CC5251CE902FE00127382 /* Main.storyboard */; };
 		878CC5291CE902FE00127382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878CC5281CE902FE00127382 /* Assets.xcassets */; };
 		878CC52C1CE902FE00127382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878CC52A1CE902FE00127382 /* LaunchScreen.storyboard */; };
+		878CC5371CE907F900127382 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 878CC5331CE907F900127382 /* 1.wav */; };
+		878CC5381CE907F900127382 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 878CC5341CE907F900127382 /* 2.wav */; };
+		878CC5391CE907F900127382 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 878CC5351CE907F900127382 /* 3.wav */; };
+		878CC53A1CE907F900127382 /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 878CC5361CE907F900127382 /* 4.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		878CC5281CE902FE00127382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		878CC52B1CE902FE00127382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		878CC52D1CE902FE00127382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		878CC5331CE907F900127382 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		878CC5341CE907F900127382 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
+		878CC5351CE907F900127382 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		878CC5361CE907F900127382 /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +65,23 @@
 				878CC5211CE902FE00127382 /* AppDelegate.swift */,
 				878CC5231CE902FE00127382 /* ViewController.swift */,
 				878CC5251CE902FE00127382 /* Main.storyboard */,
+				878CC53B1CE9081200127382 /* Sound */,
 				878CC5281CE902FE00127382 /* Assets.xcassets */,
 				878CC52A1CE902FE00127382 /* LaunchScreen.storyboard */,
 				878CC52D1CE902FE00127382 /* Info.plist */,
 			);
 			path = "Memory Mini-Game";
+			sourceTree = "<group>";
+		};
+		878CC53B1CE9081200127382 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				878CC5331CE907F900127382 /* 1.wav */,
+				878CC5341CE907F900127382 /* 2.wav */,
+				878CC5351CE907F900127382 /* 3.wav */,
+				878CC5361CE907F900127382 /* 4.wav */,
+			);
+			name = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +142,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878CC5391CE907F900127382 /* 3.wav in Resources */,
 				878CC52C1CE902FE00127382 /* LaunchScreen.storyboard in Resources */,
 				878CC5291CE902FE00127382 /* Assets.xcassets in Resources */,
+				878CC53A1CE907F900127382 /* 4.wav in Resources */,
+				878CC5371CE907F900127382 /* 1.wav in Resources */,
+				878CC5381CE907F900127382 /* 2.wav in Resources */,
 				878CC5271CE902FE00127382 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
