@@ -11,8 +11,8 @@ import AVFoundation
 
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     
-    @IBOutlet weak var scoreLabel: UILabel! // Level Label
-    @IBOutlet weak var startButton: UIButton! //Start Game Button
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var startButton: UIButton!
     @IBOutlet var soundButton: [UIButton]!
 
     
@@ -31,7 +31,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpAudioFiles()
-        // Do any additional setup after loading the view, typically from a nib.
+      
     }
     
     func setUpAudioFiles () {
