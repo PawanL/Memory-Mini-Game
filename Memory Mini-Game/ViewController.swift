@@ -68,12 +68,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         player2.numberOfLoops = 0
         player3.numberOfLoops = 0
         player4.numberOfLoops = 0
-        
-        
-        
-        
-        
-        
+   
     }
 
     @IBAction func soundButtonPressed(sender: AnyObject) {
@@ -219,7 +214,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         playNextItem()
        
-        
     }
     
     func disableButtons() {

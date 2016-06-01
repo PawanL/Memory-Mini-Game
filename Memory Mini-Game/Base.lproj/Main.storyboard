@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="219H" translatesAutoresizingMaskIntoConstraints="NO" id="el9-eZ-8df">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-Jy-bqB">
                                 <rect key="frame" x="130" y="131" width="165" height="165"/>
                                 <state key="normal" image="red"/>
@@ -45,10 +48,10 @@
                                     <action selector="playGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfc-1G-Xez"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjs-24-iRB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjs-24-iRB">
                                 <rect key="frame" x="229" y="62" width="141" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZs-xB-fWs">
@@ -64,9 +67,13 @@
                             <constraint firstItem="3a0-Ff-fQn" firstAttribute="top" secondItem="PZs-xB-fWs" secondAttribute="bottom" constant="-40" id="6hm-gh-F5C"/>
                             <constraint firstItem="4bJ-zV-XzT" firstAttribute="leading" secondItem="3a0-Ff-fQn" secondAttribute="trailing" constant="-38" id="AfO-GG-ajk"/>
                             <constraint firstItem="4bJ-zV-XzT" firstAttribute="top" secondItem="3a0-Ff-fQn" secondAttribute="bottom" constant="-40" id="BgV-vS-g4M"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="el9-eZ-8df" secondAttribute="bottom" id="DUu-uf-j5e"/>
                             <constraint firstItem="3a0-Ff-fQn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EKz-1M-041"/>
                             <constraint firstItem="2sO-Jy-bqB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="132" id="EMu-me-1Rw"/>
+                            <constraint firstAttribute="trailing" secondItem="el9-eZ-8df" secondAttribute="trailing" id="Hss-KK-lXa"/>
                             <constraint firstItem="3a0-Ff-fQn" firstAttribute="leading" secondItem="2sO-Jy-bqB" secondAttribute="trailing" constant="-39" id="V3W-Mz-gqG"/>
+                            <constraint firstItem="el9-eZ-8df" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cMa-6a-nLc"/>
+                            <constraint firstItem="el9-eZ-8df" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dqb-P1-kdJ"/>
                             <constraint firstItem="3a0-Ff-fQn" firstAttribute="leading" secondItem="Kye-ea-w7D" secondAttribute="trailing" constant="-39" id="fQl-nZ-BIr"/>
                             <constraint firstItem="PZs-xB-fWs" firstAttribute="leading" secondItem="3a0-Ff-fQn" secondAttribute="trailing" constant="-38" id="hNl-Xp-gTf"/>
                             <constraint firstItem="3a0-Ff-fQn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m18-3z-8dO"/>
@@ -96,6 +103,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="219H" width="1912" height="1275"/>
         <image name="blue" width="166" height="166"/>
         <image name="green" width="165" height="166"/>
         <image name="play" width="88" height="88"/>
